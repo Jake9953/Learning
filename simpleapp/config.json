@@ -1,0 +1,38 @@
+{
+  "ApiProviders": {
+    "OpenSky": {
+      "Enabled": true,
+      "Endpoint": "https://api.opensky-network.org/api/flights/all",
+      "Username": "",
+      "Password": "",
+      "ApiKey": "",
+      "Description": "Free real-time flight tracking, no API key required for basic usage"
+    },
+    "AeroDataBox": {
+      "Enabled": false,
+      "Endpoint": "https://aerodatabox.p.rapidapi.com/v1/flights/list",
+      "ApiKey": "",
+      "RapidApiHost": "aerodatabox.p.rapidapi.com",
+      "Description": "Comprehensive flight data, requires RapidAPI key"
+    },
+    "Aviationstack": {
+      "Enabled": false,
+      "Endpoint": "https://api.aviationstack.com/v1/flights",
+      "ApiKey": "",
+      "Description": "Global flight tracking with free tier, requires API key"
+    }
+  },
+  "Application": {
+    "DefaultProvider": "OpenSky",
+    "TimeoutSeconds": 10,
+    "CacheResults": true,
+    "CacheDurationMinutes": 5,
+    "LogLevel": "Info"
+  },
+  "Features": {
+    "InteractiveMode": true,
+    "CommandLineMode": true,
+    "DemoMode": true,
+    "ExportToCSV": true
+  }
+}
